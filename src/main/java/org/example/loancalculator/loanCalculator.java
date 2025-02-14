@@ -12,6 +12,7 @@ public class loanCalculator extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+
         // Create a GridPane to hold the components
         GridPane pane = new GridPane();
 
