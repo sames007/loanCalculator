@@ -38,29 +38,19 @@ public class loanCalculator extends Application {
         Button button_Calculate = new Button("Calculate");
 
         // Add components to the pane
-        pane.add(label_InterestRate, 0, 0);
-        pane.add(textfield_InterestRate, 1, 0);
-
-        pane.add(label_Years, 0, 1);
-        pane.add(textfield_Years, 1, 1);
-
-        pane.add(label_LoanAmount, 0, 2);
-        pane.add(textfield_LoanAmount, 1, 2);
-
-        pane.add(label_Monthly, 0, 3);
-        pane.add(textfield_Monthly, 1, 3);
-
-        pane.add(label_Total, 0, 4);
-        pane.add(textfield_Total, 1, 4);
-
+        pane.addRow(0, label_InterestRate, textfield_InterestRate);
+        pane.addRow(1, label_Years, textfield_Years);
+        pane.addRow(2, label_LoanAmount, textfield_LoanAmount);
+        pane.addRow(3, label_Monthly, textfield_Monthly);
+        pane.addRow(4, label_Total, textfield_Total);
         pane.add(button_Calculate, 1, 5);
 
         // Set up the button's action (event-driven)
         button_Calculate.setOnAction(e -> {
             // 1. Get the user input from the text fields
             double annualInterestRate = Double.parseDouble(textfield_InterestRate.getText());
-            int numberOfYears         = Integer.parseInt(textfield_Years.getText());
-            double loanAmount         = Double.parseDouble(textfield_LoanAmount.getText());
+            int numberOfYears = Integer.parseInt(textfield_Years.getText());
+            double loanAmount = Double.parseDouble(textfield_LoanAmount.getText());
 
             // 2. Calculate monthly interest rate
             double monthlyInterestRate = annualInterestRate / 1200;  // 12 months, so /1200
