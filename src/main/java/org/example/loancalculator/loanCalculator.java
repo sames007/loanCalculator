@@ -45,7 +45,7 @@ public class loanCalculator extends Application {
         pane.addRow(4, label_Total, textfield_Total);
         pane.add(button_Calculate, 1, 5);
 
-        // Set up the Calculate button's action (event-driven)
+        // Set up the Calculate button's action
         button_Calculate.setOnAction(e -> {
             // 1. Get the user input from the text fields
             double annualInterestRate = Double.parseDouble(textfield_InterestRate.getText());
