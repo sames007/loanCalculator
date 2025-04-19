@@ -1,23 +1,25 @@
-# Loan Calculator
+# 💰 Loan Calculator
 
-A simple JavaFX app that calculates your loan payments in seconds.
+A simple JavaFX application that computes your monthly and total loan payments based on:
 
-## What It Does
+- **Annual interest rate**  
+- **Loan term in years**  
+- **Loan amount**  
 
-- **Enter** your annual interest rate (e.g. `5.5` for 5.5%).
-- **Enter** how many years you’ll take to pay it back.
-- **Enter** the total loan amount.
-- **Click** “Calculate”.
-- **See** your monthly payment and the total payment over the life of the loan.
+## 📋 What It Does
 
-## Why It’s Cool
+1. You enter:
+   - Annual interest rate (e.g. 5 for 5%)  
+   - Number of years (e.g. 10)  
+   - Loan amount (e.g. 10000)  
+2. Click **Calculate**  
+3. It shows:
+   - **Monthly Payment** (read‑only)  
+   - **Total Payment** over the life of the loan  
 
-- No math headache—just plug and play.
-- Instant results in a clean, simple window.
-- Great demo of JavaFX basics.
+## 🚀 How to Run
 
-## Prerequisites
-
-- **Java 11** or newer  
-- **JavaFX SDK** (download from [openjfx.io](https://openjfx.io/))  
-- An IDE (IntelliJ, Eclipse) or a terminal
+1. Install **Java 17+** and **JavaFX 19+**.  
+2. Clone this repo and open it in your IDE.  
+3. Make sure JavaFX is on your module path or classpath.  
+4. Run the `main()` method in `loanCalculator.java`.  
